@@ -4,24 +4,24 @@
   "height": 400,
   "title": "COVID-19 Cases per Country (13 Oct 2020)",
   "data": {
-  "url": "https://raw.githubusercontent.com/Abdullahi104/3179/main/Week10HW/data/malnutrition-death-rate-vs-gdp-per-capita_cleaned_data.csv"
+  "url": "https://raw.githubusercontent.com/Abdullahi104/3179/main/Week10HW/data/malnutrition-death-rate-vs-gdp-per-capita_cleaned_final.csv"
   },
   "transform": [{"filter": "datum.Active > 0"},
   {"filter": "datum.Malnutrition > 0"}],
   "mark": "circle",
   "encoding": {
   "x": {
-  "field": "Population",
+  "field": "GDP",
   "type": "quantitative",
   "title": "Confirmed Cases",
   "axis": {"tickCount": 7},
-  "scale": {"type": "log", "domain": [1, 10000]}
+  "scale": {"type": "log", "domain": [1, 100000]}
   },
   "y": {
   "field": "Malnutrition",
   "type": "quantitative",
   "axis": {"tickCount": 6},
-  "scale": {"type": "log", "domain": [1, 10000]}
+  "scale": {"type": "log", "domain": [1, 1000000]}
   },
   "color": {
   "field": "Continent",
