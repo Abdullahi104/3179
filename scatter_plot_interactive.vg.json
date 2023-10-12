@@ -1,0 +1,142 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+    "title": "Malnutrition death rate vs. GDP per capita in 2019",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Abdullahi104/3179/main/Week10HW/data/MalnutritionData.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.GDP > 0"
+      },
+      {
+        "filter": "datum.Malnutrition > 0"
+      }
+    ],
+    "params": [
+      {
+        "name": "continent_highlight",
+        "select": {
+          "type": "point",
+          "fields": [
+            "Continent "
+          ]
+        },
+        "bind": "legend"
+      }
+    ],
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": "GDP",
+        "type": "quantitative",
+        "title": "GDP Per Capita ($)",
+        "axis": {
+          "tickCount": 4
+        },
+        "scale": {
+          "type": "log",
+          "domain": [
+            100,
+            1000000
+          ]
+        }
+      },
+      "y": {
+        "field": "Malnutrition",
+        "type": "quantitative",
+        "axis": {
+          "tickCount": 5
+        },
+        "scale": {
+          "type": "log",
+          "domain": [
+            100,
+            100000000
+          ]
+        }
+      },
+      "color": {
+        "field": "Continent ",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "N. America",
+            "S. America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Australia"
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#a6cee3",
+            "#377eb8",
+            "#a65628"
+          ]
+        }
+      },
+      "opacity": {
+        "condition": {
+          "param": "continent_highlight",
+          "value": 0.6
+        },
+        "value": 0.2
+      },
+      
+      "size": {
+        "field": "Population",
+        "type": "quantitative",
+        "scale": {
+          "type": "threshold",
+          "domain": [
+            1000000,
+            10000000,
+            50000000,
+            100000000,
+            500000000
+          ],
+          "range": [
+            25,
+            50,
+            150,
+            200,
+            300,
+            400
+          ]
+        },
+        "legend": {
+          "format": ".1s"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "Country",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        },
+        {
+          "field": "GDP",
+          "title": "GDP Per Capita",
+          "type": "quantitative",
+          "format": ","
+        },
+        {
+          "field": "Population",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+    }
+    
+  
+  
+  }
