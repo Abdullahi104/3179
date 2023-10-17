@@ -1,6 +1,19 @@
-Region,undernourishment2019,undernourishment2020
-Africa ,17.4,19.6
-Asia,7.4,8.6
-Latin America & And The Caribbean,6.7,8
-Oceania ,5.6,5.4
-Northern America & Europe,2.5,2.5
+Region,Year,Undernourishment,,,,,,
+Africa ,2019,17.4,,,,,,
+Africa ,2020,19.6,,,,,,
+Asia,2019,7.4,,,,,,
+Asia,2020,8.6,,,,,,
+Latin America & Caribbean,2019,6.7,,,,,,
+Latin America & Caribbean,2020,8,,,,,,
+Oceania ,2019,5.6,,,,,,
+Oceania ,2020,5.4,,,,,,
+Northern America & Europe,2019,2.5,,,,,,
+Northern America & Europe,2020,2.5,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
