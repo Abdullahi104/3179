@@ -1,0 +1,92 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+    "title": "PREVALENCE OF UNDERNOURISHMENT (2005-2021)",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Abdullahi104/3179/main/VIS_2/data/Prevelanceofundernourishmentdataset.csv"
+    },
+
+    "params": [
+      {
+        "name": "continent_highlight",
+        "select": {
+          "type": "point",
+          "fields": [
+            "Region"
+          ]
+        },
+        "bind": "legend"
+      }
+    ],
+
+
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "title": "GDP Per Capita ($)"
+      },
+
+    "xOffset": {"field": "Region"},
+
+      "y": {
+        "field": "Undernourishment",
+        "type": "quantitative"
+      },
+
+      "color": {
+        "field": "Region",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Africa ",
+            "Asia",
+            "Latin America & Caribbean",
+            "Oceania "
+          ],
+          "range": [
+            "#e41a1c",
+            "#984ea3",
+            "#ff7f00",
+            "#a6cee3"
+          ]
+        }
+      },
+      "opacity": {
+        "condition": {
+          "param": "continent_highlight",
+          "value": 1
+        },
+        "value": 0.2
+      },
+      
+
+      "tooltip": [
+        {
+          "field": "Region",
+          "type": "nominal"
+        },
+        {
+          "field": "Year",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        },
+        {
+          "field": "Undernourishment",
+          "title": "GDP Per Capita",
+          "type": "quantitative",
+          "format": ","
+        },
+        {
+          "field": "Population(m)",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+    }
+  
+  
+  }
+
