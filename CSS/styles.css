@@ -1,0 +1,72 @@
+
+
+h1{
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+}
+
+h2{
+font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+font-family: 'Open Sans', sans-serif;
+}
+
+h4{
+font-family: 'Open Sans', sans-serif;
+}
+
+
+
+p {
+font-family: 'Raleway', sans-serif;
+}
+
+
+/**
+.page {
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+}
+/**/
+
+
+
+
+
+
+
+
+.title-layout
+{
+	background-color: rgb(183, 255, 149);
+	
+	margin-bottom: 15px;
+    
+}
+
+
+body {
+	background-image: url(../IMAGES\BackgroundIMG.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.pure-u-5-5 {
+	text-align: center;
+}
+
+.topic {
+    background-color: rgb(143, 143, 143);
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
+    width: 100vw;
+}
