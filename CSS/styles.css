@@ -24,21 +24,14 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-/**
 .page {
-    width: 400px;
+    width: 1100px;
     background-color: white;
     margin: auto;
     padding: 20px;
-    padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 40px;
+	padding-bottom: 30px;
 }
-/**/
-
-
-
-
-
 
 
 
@@ -51,22 +44,48 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-body {
-	background-image: url(../IMAGES\BackgroundIMG.jpg);
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-}
+
+
 
 .pure-u-5-5 {
 	text-align: center;
 }
 
+
+
 .topic {
-    background-color: rgb(143, 143, 143);
-    padding-bottom: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0 auto;
-    width: 100vw;
+    background-color: rgb(186, 186, 186);
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto;
+    width: 100%;/
 }
+
+.topic1 {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto;
+    width: 100%;/
+}
+
+
+
+
+
+
+body {
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
