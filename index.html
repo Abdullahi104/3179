@@ -108,6 +108,61 @@ body {
 
  </section> 
 
+<!-- MAP 2 -->
+
+
+<section class="topic"> 
+
+
+
+
+  <!-- pure grid group -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      
+        <h2>Global Undernourshment indicator</h2>
+        <p>The global hunger index essentially encapsulates 3 different dimensions of hunger. Consisting of availability of food, Shortfalls in nutrition status and child mortaility
+          The Global Hunger Index (GHI) is a tool that helps us understand hunger levels in different countries. It uses a scale to show how severe hunger is in each place. The darker the color on the map, the more severe the hunger. The GHI combines data like food availability and child nutrition to give us a clear picture of the hunger situation around the world. It reminds us of the need to work together to fight hunger on a global scale. </p>
+      
+    </div>
+    <div class="pure-u-5-5">
+      <div id="vis6" class="vis-container"></div>
+    </div>
+  </div>
+  <!-- end pure grid group -->
+
+
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section> 
+
+<!-- WHITE SPACE BREAK -->
+
+<section class="topic1"> 
+
+</section> 
+
   <!-- VIS 1 -->
 
 
@@ -315,6 +370,7 @@ The data on deaths from Protein Energy Malnutrition (PEM), segmented by age grou
     var specVis3 = "Vis2.vg.json";
     var specVis4 = "Vis3.vg.json";
     var specVis5 = "Vis4.vg.json";
+    var specVis6 = "choropleth_map2.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
@@ -333,6 +389,11 @@ The data on deaths from Protein Energy Malnutrition (PEM), segmented by age grou
     vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
 
 
 
