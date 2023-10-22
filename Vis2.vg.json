@@ -25,14 +25,15 @@
     "encoding": {
       "x": {
         "field": "Year",
-        "title": "GDP Per Capita ($)"
+        "title": "Year"
       },
 
     "xOffset": {"field": "Region"},
 
       "y": {
         "field": "Undernourishment",
-        "type": "quantitative"
+        "type": "quantitative",
+        "title": "Undernourishment (%)"
       },
 
       "color": {

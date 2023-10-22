@@ -45,6 +45,7 @@
       },
       "y": {
         "field": "Malnutrition",
+        "title": "Malnutrition Death Rate",
         "type": "quantitative",
         "axis": {
           "tickCount": 5

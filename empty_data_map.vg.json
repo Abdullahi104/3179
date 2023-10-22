@@ -7,7 +7,7 @@
     "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "equalEarth" },
   "layer":[
     {
       "transform": [
@@ -40,7 +40,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [10, 30, 55],
+            "domain": [10, 30, 50],
             "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
           }
         },
@@ -50,6 +50,12 @@
         ]
       }
     }
+
+    
+
+
+
   ]
+
   
 }
