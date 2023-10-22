@@ -1,0 +1,374 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Worldwide Hunger Levels Year on Year",
+  
+   
+   
+
+"hconcat":[
+
+{
+
+   "data": {
+    "values": [
+      {"category": "Hungry", "value": 7.8},
+      {"category": "Not Hungry", "value": 92.2}
+    ]
+    
+  },
+
+
+  
+  
+  "width":170,
+  "height":300,
+
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {"field": "category", "type": "nominal"},
+
+    
+      "tooltip": [
+        {
+          "field": "category",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+
+
+  },
+
+
+ "layer": [
+  {
+
+    "mark": {"type": "arc", "outerRadius": 110, "innerRadius":70}
+  }, 
+  
+  {
+    "mark": {"type": "text", "radius": 90, "fontWeight":"bold","fontSize":"20"},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"},
+      "color":{"value":"black"}
+      
+    }
+
+    
+  },
+  {
+  "mark": {
+          "type": "text",
+          "text": "2020",
+         "align": "center",
+         "fontWeight":"bold",
+         "fill": "black",
+         "fontSize":50
+        }
+  
+  }
+  ]
+
+
+
+        
+},
+  
+    
+
+
+
+
+
+
+
+
+
+{
+
+  
+   "data": {
+    "values": [
+      {"category": "Hungry", "value": 7.6},
+      {"category": "Not Hungry", "value": 92.2}
+    ]
+  },
+
+
+  
+  "width":170,
+  "height":300,
+
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {"field": "category", "type": "nominal"},
+
+    
+      "tooltip": [
+        {
+          "field": "category",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+
+
+  },
+
+
+ "layer": [
+  {
+
+    "mark": {"type": "arc", "outerRadius": 110, "innerRadius":70}
+  }, 
+  
+  {
+    "mark": {"type": "text", "radius": 90, "fontWeight":"bold","fontSize":"20"},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"},
+      "color":{"value":"black"}
+      
+    }
+
+    
+  },
+  {
+  "mark": {
+          "type": "text",
+          "text": "2020",
+         "align": "center",
+         "fontWeight":"bold",
+         "fill": "black",
+         "fontSize":50
+        }
+  
+  }
+  ]
+    
+
+},
+
+
+{
+  
+   "data": {
+    "values": [
+      {"category": "Hungry", "value": 7.7},
+      {"category": "Not Hungry", "value": 92.3}
+    ]
+  },
+
+  
+  
+  "width":170,
+  "height":300,
+
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {"field": "category", "type": "nominal"},
+
+    
+      "tooltip": [
+        {
+          "field": "category",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+
+
+  },
+
+
+ "layer": [
+  {
+
+    "mark": {"type": "arc", "outerRadius": 110, "innerRadius":70}
+  }, 
+  
+  {
+    "mark": {"type": "text", "radius": 90, "fontWeight":"bold","fontSize":"20"},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"},
+      "color":{"value":"black"}
+      
+    }
+
+    
+  },
+  {
+  "mark": {
+          "type": "text",
+          "text": "2020",
+         "align": "center",
+         "fontWeight":"bold",
+         "fill": "black",
+         "fontSize":50
+        }
+  
+  }
+  ]
+
+},
+
+
+{
+  
+   "data": {
+    "values": [
+      {"category": "Hungry", "value": 8},
+      {"category": "Not Hungry", "value": 92}
+    ]
+  },
+
+
+  
+  "width":170,
+  "height":300,
+
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {"field": "category", "type": "nominal"},
+
+    
+      "tooltip": [
+        {
+          "field": "category",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+
+
+  },
+
+
+  "layer": [
+  {
+
+    "mark": {"type": "arc", "outerRadius": 110, "innerRadius":70}
+  }, 
+  
+  {
+    "mark": {"type": "text", "radius": 90, "fontWeight":"bold","fontSize":"20"},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"},
+      "color":{"value":"black"}
+      
+    }
+
+    
+  },
+  {
+  "mark": {
+          "type": "text",
+          "text": "2020",
+         "align": "center",
+         "fontWeight":"bold",
+         "fill": "black",
+         "fontSize":50
+        }
+  
+  }
+  ]
+
+},
+
+
+{
+  
+   "data": {
+    "values": [
+      {"category": "Hungry", "value": 9.3},
+      {"category": "Not Hungry", "value": 90.7}
+    ]
+  },
+
+
+  
+  
+  "width":170,
+  "height":300,
+
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {"field": "category", "type": "nominal"},
+
+    
+      "tooltip": [
+        {
+          "field": "category",
+          "type": "nominal"
+        },
+        {
+          "field": "Rate",
+          "title": "Malnutrition Per 100000",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+
+
+  },
+
+
+  "layer": [
+  {
+
+    "mark": {"type": "arc", "outerRadius": 110, "innerRadius":70}
+  }, 
+  
+  {
+    "mark": {"type": "text", "radius": 90, "fontWeight":"bold","fontSize":"20"},
+    "encoding": {
+      "text": {"field": "value", "type": "quantitative"},
+      "color":{"value":"black"}
+      
+    }
+
+    
+  },
+  {
+  "mark": {
+          "type": "text",
+          "text": "2020",
+         "align": "center",
+         "fontWeight":"bold",
+         "fill": "black",
+         "fontSize":50
+        }
+  
+  }
+  ]
+
+  
+    
+
+}
+
+
+
+
+
+]
+}

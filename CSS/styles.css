@@ -8,7 +8,7 @@ h1{
     font-family: 'Oswald', sans-serif;
     font-family: 'Raleway', sans-serif;
 text-align: center;
-font-size: 80px
+font-size: 105px
 }
 
 h2{
@@ -36,14 +36,13 @@ font-family: 'Raleway', sans-serif;
 
 
 
-
 p {
 font-family: 'Raleway', sans-serif;
 }
 
 
 .page {
-    width: 1000px;
+    width: 1300px;
     background-color: rgb(167, 234, 227);
     margin: auto;
     padding: 40px;

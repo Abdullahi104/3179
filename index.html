@@ -233,9 +233,37 @@ body {
 
 
 
+  <!-- WHITE SPACE BREAK -->
+
+  <section class="topic1"> 
+
+  </section> 
 
 
+<!-- VIS 4 -->
 
+<section class="topic"> 
+  <!-- pure grid group -->
+  <div class="pure-g">
+  <div class="pure-u-1-1">
+    
+      <h2>Malnutrition death rate vs. GDP per capita (2019)</h2>
+      <p> In this section, we compare two important factors: the death rate due to malnutrition and the GDP (economic wealth) of countries in 2019. The graphs show this comparison. We use the death rate to see how many people die from malnutrition in different places. The GDP shows how rich or poor a country is. By looking at both together, we can understand how wealth is related to the risk of malnutrition-related deaths. This information is crucial for us to work towards a world where everyone has enough to eat and can lead healthy lives
+      </p>
+</div>
+  
+    <div class="pure-u-1-1">
+      <div class="box">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+    </div>
+    </div>
+
+  
+  <!-- end pure grid group -->
+
+
+</section> 
 
 
 
@@ -281,6 +309,7 @@ body {
     var specVis2 = "scatter_plot_interactive.vg.json";
     var specVis3 = "Vis2.vg.json";
     var specVis4 = "Vis3.vg.json";
+    var specVis5 = "Vis4.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false });
 
@@ -295,6 +324,15 @@ body {
     vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+
+
+
+
   </script>
 </body>
 
